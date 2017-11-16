@@ -8,7 +8,7 @@
 	</style>
 	<meta charset="utf-8">
 	<title>JSmol -- Jmol/HTML5 Demo</title>
-	<script type="text/javascript" src="./molvis-tools/jsmol/JSmol.min.js"></script>
+	<script type="text/javascript" src="../molvis-tools/jsmol/JSmol.min.js"></script>
 
 	<script type="text/javascript">
 		
@@ -46,13 +46,13 @@
 			color: userOptions.color, 
 			addSelectionOptions: false, // creates search console
 			use: "HTML5",   // JAVA HTML5 WEBGL are all options
-					j2sPath: "./molvis-tools/jsmol/j2s", // this needs to point to where the j2s directory is.
-					jarPath: "./molvis-tools/jsmol/java",// this needs to point to where the java directory is.
+					j2sPath: "../molvis-tools/jsmol/j2s", // this needs to point to where the j2s directory is.
+					jarPath: "../molvis-tools/jsmol/java",// this needs to point to where the java directory is.
 			jarFile: "JmolAppletSigned.jar",
 			isSigned: true,
 					script: "console;set zoomlarge false;set antialiasDisplay;load " + molFile + ";center",
 			//	serverURL: "http://chemapps.stolaf.edu/jmol/jsmol/php/jsmol.php",
-			serverURL: "./molvis-tools/jsmol/php/jsmol.php",
+			serverURL: "../molvis-tools/jsmol/php/jsmol.php",
 			readyFunction: jmol_isReady,
 			disableJ2SLoadMonitor: true,
 	  	disableInitialConsole: true,
