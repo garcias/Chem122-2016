@@ -55,7 +55,7 @@ You can change some aesthetic properties, such as the fineness of the wireframe 
 
 ## Displaying a different molecule
 
-The `orbitals/` directory contains several files with a `.out` ending. Each is a **GAMESS output** file that was produced by a [quantum-mechanical calculation](https://github.com/garcias/build-gamess#build-gamess) of a molecule's electronic structure. It contains the coordinates of the desired molecule and the shape of each molecular orbital. You can display the molecule in any file by using the `load` command in the Jmol console to the right of the display. Use the `centerat` command to set the origin to the center of gravity (i.e., average) of the molecule. Do this for an N<sub>2</sub> molecule.
+The `orbitals/` directory contains several files with a `.out` ending. Each is a **GAMESS output** file that was produced by a [quantum-mechanical calculation](https://github.com/garcias/build-gamess#build-gamess) of a molecule's electronic structure. It contains the coordinates of the desired molecule and the shape of each molecular orbital. You can display the molecule in any file by using the `load` command in the Jmol console to the right of the display. Use the `centerat` command to set the origin to the center of gravity (i.e., average) of the molecule. Do this for an Ne atom.
 
 ```java
     load Ne.out
