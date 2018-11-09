@@ -8,39 +8,47 @@ Most molecules consist of several atoms connected in a particular network **arch
 - display each structure with Jmol 
 - draw the projection of a 3D molecular structure 
 
-Before you start, make sure you have cloned the entire `Chem122-2016` repository into your Cloud9 workspace, which includes a Jmol server.
 
+## JSME tuorial
 
-## Start the JSME web app
+The **JavaScript Molecular Editor** is an interactive tool for editing skeletal formulas, and then converting this information into machine-friendly notation for database queries.  It also allows you to sketch out site-specific variations on a given structure, which is useful for studying metabolites of a parent compound.
 
-Search for an available JSME web app. (As of this writing, [Peter Ertl's demonstration page](http://peter-ertl.com/jsme/) works.) 
+### Start JSME
 
-In JSME, click the single-bond tool (a simple line), and then click in the canvas area. It simply displays a line, which represents ethane (in **skeletal** notation). Click the double arrow button and **Copy as SMILES** (or click the smiley face button if available). Copy this string.
+JSME is a web app that runs in your browser. Search for an available JSME implementation. (As of Nove 2018, [Peter Ertl's demonstration page](http://peter-ertl.com/jsme/) works well.) 
 
+### Generate SMILES notation for ethane
 
-## Display the molecule in JSMol
+1. In JSME, click the single-bond tool (a simple line).
+2. Click in the canvas area. It simply displays a line, which represents ethane, CH<sub>3</sub>CH<sub>3</sub>, in **skeletal** notation. 
+3. Click the double arrow button and **Copy as SMILES** (or click the smiley face button if available). Copy this string; it should be simply `CC`. 
 
-Change into the directory `shape`. List its contents and confirm that the file `jmol-console.html` is there. Open it and **Run** it.
+### Visualize the structure of ethane
 
-```bash
-    $ cd shape
-    $ ls
-    $ c9 open jmol-console.html 
-```
+1. Start up Jmol Console. 
+2. Use `cd` to point to this URL, and `load` to construct a model from the SMILES string. The `$` tells Jmol to that `CC` is SMILES notation and not a file name.
 
-The Jmol `load` command can take a SMILES string and generate 3D coordinates for it based on VSEPR; just add a `$` in front of the string.
-
-```java
+```Java
+    cd https://garcias.github.io/Chem122-2016/shape/
     load $CC
     centerat average
 ```
 
-Rotate the molecule and observe its appearance from different perspectives. 
+3. Rotate the molecule and observe its appearance from different perspectives.
+4. Rotate the molecule so that the C chain lies in the plane of the screen. Read the guidelines below and then sketch this model.
+
+### Including perspective in skeletal notation
+
+Drawing a molecule with realistic perspective shows the spatial arrangement accurately — but is time-consuming. In practice, chemists replace the circles with atomic symbols, but retain the bond angles and the wedges. This convention is called **Kekule notation**.
+
+When drawing a C chain, we prefer to keep the C–C bonds in the same plane as much as possible. But then the H atoms pointing out of the screen will obscure the H atoms pointing behind the screen. How can we show all the atoms? Chemists take artistic license, offsetting the front H to one side and the back H to the other side. This is not a perfectly accurate depiction, but does manage to represent all the important aspects of molecular shape. (Cubist painters Picasso and Braque used this approach to depict multiple perspectives of a figure merged onto a single 2D canvas.)
+
+In structures with many C and H atoms, chemists often use **skeletal notation**, which represents C atoms as the endpoints of bonds, and omits the H atoms and C-H bond lines entirely (we say that the H atoms are **implicit**). Even with these simplifications, the structures retain VSEPR bond angles and wedges. When interpreting skeletal notation, we must infer how many H atoms are bonded to each C atom, and which ways the C–H bonds point, since they’re not shown explicitly.
 
 
-## Exercise: generating the structure of alkanes
+## Exercise: Generating the structure of alkanes
 
-Draw the molecules below, generate their SMILES strings, and display each one using JSMol. 
+Using JSME, Jmol models, and these visual conventions, sketch each molecule below in Kekule notation and in skeletal notation. Record both the name and SMILES string for each one next to the structure.
 
 - ethane: CH<sub>3</sub>CH<sub>3</sub>
 - propane: CH<sub>3</sub>CH<sub>2</sub>CH<sub>3</sub>
@@ -50,4 +58,24 @@ Draw the molecules below, generate their SMILES strings, and display each one us
 - cyclohexane: C<sub>6</sub>H<sub>12</sub>, six CH<sub>2</sub> groups connected in a ring
 - cyclohexanol: C<sub>6</sub>H<sub>11</sub>OH, *(This is based on cyclohexane, except you replace a H with a hydroxyl group (–OH).)* 
 
-Follow the directions in class for orienting each molecule. Sketch each one with both Kekule notation and skeletal notation.
+
+## Exercise: Visualizing isomerism between molecules
+
+1. Look up and record the structural formulas of the following compounds. (The Wikipedia article for some will show two structures; record both).
+
+  - n-propanol
+  - isopropanol
+  - 2-butene (double bond is in the middle) 
+  - glycine, without charges 
+  - alanine, without charges 
+  - carvone (label "R" and "S" forms)
+ 
+2. Using JSME, Jmol models, and these visual conventions, sketch the Kekule or skeletal structure of n-propanol using wedge notation. Repeat this for isopropanol. Compare your models and describe the difference in overall shape.
+4. For each pair of molecules below, assign one to yourself and the other to a partner, so you can compare the results visually. Generate the model of each and sketch the structure on paper using wedge notation. Compare your models and describe the difference in overall shape.
+    1. **cis-2-butene vs trans-2-butene.** 
+    2. **alanine.** Draw alanine in a way that the N atom is in the same plane as the two C atoms and the two O atoms. Use the wedged-bond tool for the methyl (CH<sub>3</sub>) group. One partner should indicate that the methyl group is in front of the plane of the page; the other partner should put it behind the plane of the page. Use the SMILES string to generate a model. Show all C and H atoms, evne those that were implicit in JSME. Try to rotate your 3D model so it matches your partner's model.
+    3. **glycine.** Draw glycine in a similar way to alanine and generate each model. Draw the corresponding Kekulé structure on paper. Try to rotate your model so it matches your partner's model.
+    4. **R- vs S-carvone.** Draw with JSME, using the ring tool as a shortcut for making the 6-C ring and then modifying it. Pay careful attention to the wedge notation. Some but not all C atoms in the ring are in the same plane. Try to rotate your model so it matches your partner's model.
+
+When using the JSME wedge tool, click on a wedge bond (pointing toward you) to convert it to a dashed wedge (pointing away from you).
+

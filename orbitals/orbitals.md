@@ -8,22 +8,16 @@ In this tutorial, you will:
 - display the isosurface of a molecular orbital
 - describe each MO's shape relative to atomic orbitals of isolated atoms (i.e., LCAO notation)
 
-Before you start, make sure you have cloned the entire `Chem122-2016` repository into your Cloud9 workspace, which includes a Jmol server.
 
+## JMol Console tutorial on orbitals
 
-## Start a JSmol web app
+Jmol Console can also display orbitals and electron density. Use `cd` to point to this URL, and load the output file (`.out`) for a Neon atom.
 
-Change into the directory `orbitals`. List its contents and confirm that the file `jsmol-console.html` exists. Open this file using the command `c9 open`.
-
-```bash
-    $ cd orbitals
-    $ ls
-#   N2.out  Ne.out  ethene.out  jmol-console.html  methane.out  orbitals.md
-    $ c9 open jmol-console.html
+```Java
+    cd https://garcias.github.io/Chem122-2016/orbitals/
+    load Ne.out
+    centerat average
 ```
-
-The code in this file defines a web app called JSMol. To run it, go to the Cloud9 menu and select **Run > Run with... > Apache**; or click the **Run** button if it is available. This should cause a new console to appear, with the message `Starting Apache httpd, serving ...` and showing a link. Click on the link and open it (or copy and paste the link into a new tab. A new browser tab should open and display the web app. By default, it should display a model of a Ne atom.
-
 
 ## Display different orbitals
 
