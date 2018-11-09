@@ -62,16 +62,14 @@ Using JSME, Jmol models, and these visual conventions, sketch each molecule belo
 ## Exercise: Visualizing isomerism between molecules
 
 1. Look up and record the structural formulas of the following compounds. (The Wikipedia article for some will show two structures; record both).
-
-  - n-propanol
-  - isopropanol
-  - 2-butene (double bond is in the middle) 
-  - glycine, without charges 
-  - alanine, without charges 
-  - carvone (label "R" and "S" forms)
- 
+    - n-propanol
+    - isopropanol
+    - 2-butene (double bond is in the middle) 
+    - glycine, without charges 
+    - alanine, without charges 
+    - carvone (label "R" and "S" forms)
 2. Using JSME, Jmol models, and these visual conventions, sketch the Kekule or skeletal structure of n-propanol using wedge notation. Repeat this for isopropanol. Compare your models and describe the difference in overall shape.
-4. For each pair of molecules below, assign one to yourself and the other to a partner, so you can compare the results visually. Generate the model of each and sketch the structure on paper using wedge notation. Compare your models and describe the difference in overall shape.
+3. For each pair of molecules below, assign one to yourself and the other to a partner, so you can compare the results visually. Generate the model of each and sketch the structure on paper using wedge notation. Compare your models and describe the difference in overall shape.
     1. **cis-2-butene vs trans-2-butene.** 
     2. **alanine.** Draw alanine in a way that the N atom is in the same plane as the two C atoms and the two O atoms. Use the wedged-bond tool for the methyl (CH<sub>3</sub>) group. One partner should indicate that the methyl group is in front of the plane of the page; the other partner should put it behind the plane of the page. Use the SMILES string to generate a model. Show all C and H atoms, evne those that were implicit in JSME. Try to rotate your 3D model so it matches your partner's model.
     3. **glycine.** Draw glycine in a similar way to alanine and generate each model. Draw the corresponding Kekulé structure on paper. Try to rotate your model so it matches your partner's model.
