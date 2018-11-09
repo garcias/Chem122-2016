@@ -59,5 +59,16 @@ Chemists have developed visual conventions to show how a geometrical arrangement
 - If a bond is coming toward you, or receding into the distance, it should appear shorter than if it were in the plane of the page.
 - Atoms and bonds closer to you might obstruct your view of atoms and bonds that are further away; offset them slightly to avoid this loss of information, even if doing so distorts the perspective.
 
-Load each of the Molfiles in `vsepr/`. Follow the directions in class for orienting and sketching each molecule.
+Load each of the Molfiles in `vsepr/`. Follow the directions in class for orienting and sketching each of the molecules:
+
+- [OCN.mol](OCN.mol)
+- [NO3.mol](NO3.mol)
+- [NO2.mol](NO2.mol)
+- [CH4.mol](CH4.mol)
+- [NH3.mol](NH3.mol)
+- [water.mol](water.mol)
+- [PCl5.mol](PCl5.mol)
+- [SF4.mol](SF4.mol)
+- [SF6.mol](SF6.mol)
+- [XeF4.mol](XeF4.mol)
 
