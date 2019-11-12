@@ -1,6 +1,6 @@
 # Drawing molecular structures
 
-Use Jmol to visualize structures in these exercises. For a quick tutorial, refer to the document [vsepr.md](/vsepr.md)
+Use Jmol to visualize structures in these exercises. For a quick tutorial, refer to the document [vsepr.md](vsepr.md)
 
 ## Visual conventions for ball-and-stick notation
 
@@ -27,7 +27,7 @@ Load the file Molfile `OCN.mol`:
 
 ## Visual conventions for Kekulé notation
 
-While ball-and-stick representations show spatial relationships realistically, they have some disadvantages: important atoms and bonds get obscured, and they are slower to draw. Chemists often translate them into **Kekulé notation**, by replacing each circle with the atomic symbol and each bond with simple lines indicating bond order. For single bonds not in the plane of the page, those coming toward you are still wedges, but those going away from you are replaced with a dashed line.
+While ball-and-stick representations show spatial relationships realistically, they have some disadvantages: important atoms and bonds get obscured, and they are slower to draw. Chemists often translate them into **Kekulé notation**, by replacing each circle with the atomic symbol and each bond with simple lines indicating bond order. For single bonds not in the plane of the page, those coming toward you are still wedges, but those going away from you are replaced with a dashed line.
 
 - Draw each atom as its atomic symbol, and each bond as one or more parallel lines indicating bond order.
 - If a bond is coming toward you, out of the plane of the page, draw it as a wedge, with the closer end being thicker.
