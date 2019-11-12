@@ -50,16 +50,7 @@ Simply point your browser to the URL: [garcias.github.io/jmol-console/](https://
     centerat average
 ```
 
-## Exercise: Visual conventions for molecular structures
-
-Chemists have developed visual conventions to show how a geometrical arrangement looks from different angles. We will practice using these conventions by sketching common views of different molecules. Here are a few common conventions. They correspond roughly to principles of drawing in perspective.
-
-- If a bond is coming toward you, out of the plane of the page, draw it as a wedge.
-- If a bond is receding into the distance, into the plane of the page, draw it as a dotted line.
-- If a bond is coming toward you, or receding into the distance, it should appear shorter than if it were in the plane of the page.
-- Atoms and bonds closer to you might obstruct your view of atoms and bonds that are further away; offset them slightly to avoid this loss of information, even if doing so distorts the perspective.
-
-Load each of the Molfiles in `vsepr/`. Follow the directions in class for orienting and sketching each of the molecules:
+Check that you can load the Molfiles in `vsepr/`. 
 
 - [OCN.mol](OCN.mol)
 - [NO3.mol](NO3.mol)
@@ -71,4 +62,3 @@ Load each of the Molfiles in `vsepr/`. Follow the directions in class for orient
 - [SF4.mol](SF4.mol)
 - [SF6.mol](SF6.mol)
 - [XeF4.mol](XeF4.mol)
-
