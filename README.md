@@ -20,6 +20,7 @@ These exercises require access to a number of other web sites or web apps. Befor
 ## The exercises
 
 - Viewing molecular models: [vsepr/vsepr.md](vsepr/vsepr.md)
+- Drawing molecular models: [vsepr/draw.md](vsepr/draw.md)
 - Generating molecular models: [shape/shape.md](shape/shape.md)
 - Using molecular databases: [database/database.md](database/database.md)
 - Viewing molecular orbitals: [orbitals/orbitals.md](orbitals/orbitals.md)

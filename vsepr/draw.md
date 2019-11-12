@@ -1,6 +1,11 @@
 # Drawing molecular structures
 
-Use Jmol to visualize structures in these exercises. For a quick tutorial, refer to the document [vsepr.md](vsepr.md)
+The arrangement of atoms and lone pairs around a central atom defines a specific **local geometry**. The valence-shell-electron-pair-repulsion (VSEPR) model can predict these geometries. In this tutorial, you will:
+
+- view the three-dimensional structure of molecules that illustrate various local geometries
+- draw the projection of each molecule's structure, as it appears from different perspectives
+
+Use Jmol to visualize the structures. For a quick tutorial, refer to the document [vsepr.md](vsepr.md)
 
 ## Visual conventions for ball-and-stick notation
 
