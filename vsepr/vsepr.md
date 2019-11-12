@@ -36,7 +36,7 @@ Simply point your browser to the URL: [garcias.github.io/jmol-console/](https://
 ### Save a static image
 
 1. Rotate the molecule until you like the perspective. Enter the command `write image caffeine.png`. JSMol will generate an image and prompt you to download it to your computer. Open the file and verify that it resembles the scene in Jmol Console.
-2. Enter the same command, but append the letter "t" at the end: `write image caffeine.pngt`. Download the image and open the file. This time the background should appear transparent, which is useful for pasting into other scenes.
+2. Enter the same command, but append the letter "t" at the end: `write image caffeine.pngt`. When prompted to download the file, delete the letter "t" at the end so the name is now "caffeine.png". Download the file and open it. This time the background should appear transparent, which is useful for pasting into other scenes.
 
 ### Display a different molecule
 
