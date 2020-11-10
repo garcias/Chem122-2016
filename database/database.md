@@ -20,6 +20,12 @@ It is often more reliable to search according to structure of your compound.
 9. Read the entries in "Mechanism of action" and identify three enzymes or receptors that ketamine reacts with. For each one, record the role of ketamine (agonist, substrate, binder, etc.), an excerpt that leads you to this conclusion, and a citation for the related study.
 10. Find and record the number of government-approved clinical trials that have been registered for ketamine.
 
+## Canadian DrugBank tutorial with ketamine
+
+1. On the PubChem page for ketamine, find any information attributed to "DrugBank", and click the URL in the citation. Alternatively, go directly to https://go.drugbank.com and enter the CAS number for ketamine in the "Drugs" search bar.
+3. Skip to the section **Pharmacology/Metabolism** and review the list of metabolites shown; confirm they are consistent with the information listed on the PubChem page.
+2. Skip to the section **Pharmacology/Mechanism of action** and review the list of proteins shown. Confirm that the role is consistent with the information listed on the PubChem page. 
+4. Click on the link for "Delta-type opioid receptor" to jump to its **Targets** section. 
 
 ## Exercise: Check for information on potential metabolite.
 
