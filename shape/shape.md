@@ -15,7 +15,7 @@ The **JavaScript Molecular Editor** is an interactive tool for editing skeletal 
 
 ### Start JSME
 
-JSME is a web app that runs in your browser. Search for an available JSME implementation. (As of Nove 2018, [Peter Ertl's demonstration page](http://peter-ertl.com/jsme/) works well.) 
+JSME is a web app that runs in your browser. Search for an available JSME implementation. (As of Nove 2018, [Peter Ertl's demonstration page](https://jsme-editor.github.io/dist/JSME_test.html) works well.) 
 
 ### Generate SMILES notation for ethane
 
