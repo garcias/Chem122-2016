@@ -39,6 +39,7 @@ While ball-and-stick representations show spatial relationships realistically, t
 - If a bond is receding into the distance, into the plane of the page, draw it as a *dotted line*. (But in special cases you can draw it as a reverse wedge.)
 - Do not allow atoms or bonds to be obscured; offset or distort the perspective slightly to avoid loss of information. (With the usual exception for implicit H or C, or using R as a variable fragment.)
 
+The last convention can be difficult if you haven't seen many 3D models of molecular strcuture. Use Jmol to pose and display ball-and-stick representations for you to reference as you draw Kekulé structures. Draw a rough sketch of the ball-and-stick model, then draw the corresponding Kekulé structure next to it. With time and practice, your intuition of spatial models will deepen until you can draw an accurate structure in Kekulé notation without needing to draw or even look at a reference model. 
 
 ## Exercise: Drawing with Kekulé notation
 
@@ -50,25 +51,28 @@ While ball-and-stick representations show spatial relationships realistically, t
 
 Load the Molfile `NO3.mol`.
 
-1. Arrange so that all 4 atoms lie in the *xy* plane, i.e., the molecular plane is in the screen plane. Draw both the ball-and-stick and Kekulé representations.
-2. Rotate so the molecular plane lies in the *xz* plane, i.e., is exactly perpendicular to the screen surface; and with one O atom pointing directly to the right, i.e., one N–O bond aligns with the *x* axis. One of the O atoms should be obscured by another. Draw the ball-and-stick representation.
-3. Rotate about the *x* axis 20 degrees, so that the molecular plane tilts down and forms a 20-degree angle with the *xz* plane. All atoms and bonds should now be visible. 
-4. Draw the ball-and-stick representation.
-5. Draw the Kekulé representation: replace circles with atomic symbols, the front N-O bond with a wedge, and the back N-O bond with a dashed line.
+1. Arrange so that all 4 atoms lie in the *xy* plane, i.e., the molecular plane is in the screen plane. Draw a quick sketch of the ball-and-stick representation; then draw the Kekulé structure. 
+2. Rotate so the molecular plane lies in the *xz* plane, i.e., is exactly perpendicular to the screen surface; and with one O atom pointing directly to the right, i.e., one N–O bond aligns with the *x* axis. One of the O atoms should be obscured by another. Sketch the ball-and-stick representation.
+3. Rotate about the *x* axis 20 degrees, so that the molecular plane tilts down and forms a 20-degree angle with the *xz* plane. All atoms and bonds should now be visible. Sketch the ball-and-stick representation again.
+4. Draw the molecule with Kekulé representation: replace circles with atomic symbols, the front N-O bond with a wedge, and the back N-O bond with a dashed line.
 
 
 ## Exercise: Drawing molecules with tetrahedral geometry (SN=4)
 
-Load the Molfile `CH4.mol`.
+Organic molecules with tetrahedral geoemtry have a variety of standard "poses" relative to the plane of a page or screen. Each one is important for different situations in chemical research, and their Kekulé representations are different.
 
-1. Arrange so that one bond points straight out of the screen and three others form a tripod pointing into the screen. (Use mouse or touch interface if necessary.) You should see three-fold symmetry. Draw the ball-and-stick representation.
-2. Rotate so that two C–H bonds are in the *xy* (screen) plane, one pointing directly up, another to the lower right. The other two bonds should not be in the screen plane.
-3. Rotate about the *x* axis -20 degrees, so the "top" C–H bond is still *mostly* pointing up, but tilted slightly toward you out of the screen plane; and so all C–H bonds are clearly visible. Draw the ball-and-stick representation.
-4. Redraw with Kekulé notation.
-5. Starting with view (2) above, rotate about the *y* axis 90 degrees, so that the C–H that was pointing to the lower right before, is now pointing toward you and slightly downward out of the screen plane. Then rotate about the x axis 30 degrees, so the “top” C–H bond is tilted slightly toward you out of the screen plane. 
-6. Draw with Kekulé notation.
-7. Rotate CH<sub>4</sub> so that two C–H bonds are in the screen plane, one pointing to the lower left, another to the lower right. The molecule should look as if it stands on two "legs", one to either side; and has two “arms”, twisted 90 degrees from the legs.
-8. Draw with Kekulé notation, and be sure to distort the top two "arm" bond so they are not obscuring each other. (It may help to rotate about the *y* axis 10 degrees to see how this should look.)
+Load the Molfile `CH4.mol`. 
+
+1. **Tripod pose** is the classic view shown in general chemistry textbooks. Rotate so that two C–H bonds are in the *xy* (screen) plane, one pointing directly up, another to the lower right. (Use mouse or touch interface if necessary.) The other two bonds should not be in the screen plane; one should completely obscure the other. Sketch the ball-and-stick representation.
+2. Rotate about the *x* axis -20 degrees, so the "top" C–H bond is still *mostly* pointing up, but tilted slightly toward you out of the screen plane; and so all C–H bonds are clearly visible. Sketch the ball-and-stick representation, next to the previous one for comparison.
+3. Draw this view using Kekulé notation.
+4. **Natta pose** is common in hydrocarbon and polymer chemistry. Rotate CH<sub>4</sub> so that two C–H bonds are in the screen plane, one pointing to the lower left, another to the lower right. The molecule should look as if it stands on two "legs", one to either side; and has two “arms”, twisted 90 degrees from the legs. One “arm” should obscure the other. Sketch the ball-and-stick representation.
+5. Rotate about the *y* axis about 20 degrees, so that both “arms” are now visible. Sketch the ball-and-stick representation, next to the previous one for comparison.
+6. Draw this view using Kekulé notation.
+7. **Fischer pose** is critical for study of carbohydrates. Starting with the Natta pose above, undo the *y* axis rotation so that one “arm” obscures the others. Rotate about the *x* axis 90 degress, so that two bonds point out of the screen plane and toward you; while the other two bonds point out of the screen plane and away from you.
+8. Sketch the ball-and-stick representation; then draw it using Kekulé notation.
+9. **Newman pose** is necessary to explain specific phenomena in organic chemistry, such as rotation barriers and preferred conformations. Arrange so that one bond points straight into the screen (and is thus obscured by the C atom), while three others form a tripod pointing out of the screen toward you. You should see three-fold symmetry.
+10. Sketch the ball-and-stick representation. There is no valid Kekulé representation. (In organic chemistry you will learn a specialized notation for this pose.)
 
 Load the Molfile `NH3.mol`.
 
