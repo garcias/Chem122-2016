@@ -25,7 +25,7 @@ JSME is a web app that runs in your browser. Search for an available JSME implem
 
 ### Visualize the structure of ethane
 
-1. Start up Jmol Console. 
+1. Start up [Jmol Console](https://garcias.github.io/jmol-console/). 
 2. Use `cd` to point to this URL, and `load` to construct a model from the SMILES string. The `$` tells Jmol to that `CC` is SMILES notation and not a file name.
 
 ```Java
@@ -36,6 +36,9 @@ JSME is a web app that runs in your browser. Search for an available JSME implem
 
 3. Rotate the molecule and observe its appearance from different perspectives.
 4. Rotate the molecule so that the C chain lies in the plane of the screen. Read the guidelines below and then sketch this model.
+
+{: .note }
+> Sometimes Jmol may fail to load a model using the `$` notation. This is usually caused by an outage of the NIH Cactus server, which converts a SMILES string to the correct Molfile. If this happens then replace the `$` symbol with the phrase `:smiles:`. This causes Jmol to use the PubChem server, which may fail if the compound's record doesn't contain a 3D structure file. For example, `load :smiles:CC` will load the model in the PubChem record for ethane.
 
 ### Including perspective in skeletal notation
 
