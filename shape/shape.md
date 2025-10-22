@@ -38,7 +38,7 @@ JSME is a web app that runs in your browser. Search for an available JSME implem
 4. Rotate the molecule so that the C chain lies in the plane of the screen. Read the guidelines below and then sketch this model.
 
 {: .note }
-Sometimes Jmol may fail to load a model using the `$` notation. This is usually caused by an outage of the NIH Cactus server, which converts a SMILES string to the correct Molfile. If this happens then replace the `$` symbol with the phrase `:smiles:`. This causes Jmol to use the PubChem server, which may fail if the compound's record doesn't contain a 3D structure file. For example, `load :smiles:CC` will load the model in the PubChem record for ethane.
+Sometimes Jmol may fail to load a model using the `$` notation. This is usually caused by an outage of the NIH Cactus server, which converts the SMILES string to a 3D structure file for Jmol to load. If this happens, then replace the `$` symbol with the phrase `:smiles:`, which will cause Jmol to request the structure from PubChem instead. For example, `load :smiles:CC` will load the model in PubChem's record for ethane. (This method may also fail if PubChem doesn't contain a 3D structure file for the compound.)
 
 ### Including perspective in skeletal notation
 
