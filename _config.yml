@@ -1,5 +1,5 @@
 remote_theme: just-the-docs/just-the-docs
-callous:
+callouts:
   note:
     title: Note
     color: purple
