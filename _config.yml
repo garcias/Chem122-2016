@@ -1,1 +1,6 @@
 remote_theme: just-the-docs/just-the-docs
+callous:
+  note:
+    title: Note
+    color: purple
+    
