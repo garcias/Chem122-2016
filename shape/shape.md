@@ -8,10 +8,13 @@ Most molecules consist of several atoms connected in a particular network **arch
 - display each structure with Jmol 
 - draw the projection of a 3D molecular structure 
 
-
 ## JSME tuorial
 
-The **JavaScript Molecular Editor** is an interactive tool for editing skeletal formulas, and then converting this information into machine-friendly notation for database queries.  It also allows you to sketch out site-specific variations on a given structure, which is useful for studying metabolites of a parent compound.
+The **JavaScript Molecular Editor** is an interactive tool for editing chemical formulas, and then converting this information into machine-friendly notation for database queries.  It also allows you to sketch out site-specific variations on a given structure, which is useful for studying metabolites of a parent compound.
+
+### Skeletal notation
+
+JSME structures are shown in **skeletal notation**, which is helpful when a structure contains many C and H atoms. It represents C atoms as the endpoints of bonds, and omits the H atoms and C-H bond lines entirely (we say that the C and H atoms are **implicit**). When interpreting skeletal notation, we must infer how many H atoms are bonded to each C atom, and which ways the C–H bonds point, since they’re not shown explicitly.
 
 ### Start JSME
 
@@ -19,9 +22,10 @@ JSME is a web app that runs in your browser. Search for an available JSME implem
 
 ### Generate SMILES notation for ethane
 
-1. In JSME, click the single-bond tool (a simple line).
-2. Click in the canvas area. It simply displays a line, which represents ethane, CH<sub>3</sub>CH<sub>3</sub>, in **skeletal** notation. 
-3. Click the double arrow button and **Copy as SMILES** (or click the smiley face button if available). Copy this string; it should be simply `CC`. 
+1. In JSME, clear any existing structures using the white rectangle in the top toolbar.
+2. Click the single-bond tool (a simple line).
+3. Click in the canvas area. It adds a single line, which represents ethane, CH<sub>3</sub>CH<sub>3</sub>, in skeletal notation. 
+4. Click the double arrow button and **Copy as SMILES** (or click the smiley face button if available). Copy this string; it should be simply `CC`. 
 
 ### Visualize the structure of ethane
 
@@ -38,16 +42,13 @@ JSME is a web app that runs in your browser. Search for an available JSME implem
 4. Rotate the molecule so that the C chain lies in the plane of the screen. Read the guidelines below and then sketch this model.
 
 {: .note }
-Sometimes Jmol may fail to load a model using the `$` notation. This is usually caused by an outage of the NIH Cactus server, which converts the SMILES string to a 3D structure file for Jmol to load. If this happens, then replace the `$` symbol with the phrase `:smiles:`, which will cause Jmol to request the structure from PubChem instead. For example, `load :smiles:CC` will load the model in PubChem's record for ethane. (This method may also fail if PubChem doesn't contain a 3D structure file for the compound.)
+Jmol may fail to load a model using the `$` notation if the NIH Cactus server is down due to government shutdown. (Jmol relies on the Cactus service to convert the SMILES string to a 3D structure file that it can load.) If this happens, then replace the `$` symbol with the phrase `:smiles:`, which will cause Jmol to request the structure from PubChem instead. For example, `load :smiles:CC` will load the model in PubChem's record for ethane. (This method may also fail if PubChem doesn't contain a 3D structure file for the compound.)
 
-### Including perspective in skeletal notation
+### Including perspective in a chemical structure
 
-Drawing a molecule with realistic perspective shows the spatial arrangement accurately — but is time-consuming. In practice, chemists replace the circles with atomic symbols, but retain the bond angles and the wedges. This convention is called **Kekule notation**.
+Drawing a ball-and-stick model shows the spatial arrangement accurately — but is time-consuming. In practice, chemists replace the circles with atomic symbols, and use wedged and dotted lines to show when bonds are not in the screen plane.
 
-When drawing a C chain, we prefer to keep the C–C bonds in the same plane as much as possible. But then the H atoms pointing out of the screen will obscure the H atoms pointing behind the screen. How can we show all the atoms? Chemists take artistic license, offsetting the front H to one side and the back H to the other side. This is not a perfectly accurate depiction, but does manage to represent all the important aspects of molecular shape. (Cubist painters Picasso and Braque used this approach to depict multiple perspectives of a figure merged onto a single 2D canvas.)
-
-In structures with many C and H atoms, chemists often use **skeletal notation**, which represents C atoms as the endpoints of bonds, and omits the H atoms and C-H bond lines entirely (we say that the H atoms are **implicit**). Even with these simplifications, the structures retain VSEPR bond angles and wedges. When interpreting skeletal notation, we must infer how many H atoms are bonded to each C atom, and which ways the C–H bonds point, since they’re not shown explicitly.
-
+When drawing a C chain, we prefer to keep the C–C bonds in the same plane as much as possible. But then the H atoms pointing out of the screen will obscure the H atoms pointing behind the screen. How can we show all the atoms? Chemists take artistic license, offsetting the front H to one side and the back H to the other side. This is not a perfectly accurate depiction, but does manage to represent all the important aspects of molecular shape.
 
 ## Exercise: Generating the structure of alkanes
 
