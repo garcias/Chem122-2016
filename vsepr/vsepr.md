@@ -37,7 +37,7 @@ Simply point your browser to the URL: [garcias.github.io/jmol-console/](https://
 3. Use the `centerat` command to set the origin to the center of gravity (i.e., average) of the molecule.
 
 ```Java
-    cd https://garcias.github.io/Chem122-2016/vsepr/
+    cd vsepr
     load OCN.mol
     centerat average
 ```
